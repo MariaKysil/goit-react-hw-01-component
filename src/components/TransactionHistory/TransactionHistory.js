@@ -20,7 +20,7 @@ const TransactionHistory = ({ items }) => {
       <tbody>
         {items.map(({ id, type, amount, currency }) => {
           return (
-            <TableItem key={id}>
+            <TableItem items={items} key={id}>
               <TableCell>{type}</TableCell>
               <TableCell>{amount}</TableCell>
               <TableCell>{currency}</TableCell>

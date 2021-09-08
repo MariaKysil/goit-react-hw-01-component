@@ -22,11 +22,7 @@ export const TableCell = styled.th`
 `;
 
 export const TableItem = styled.tr`
-  '::nth-of-type(odd)': {
-    background: '#fff';
-  }
-
-  '::nth-of-type(even)': {
-    background: '#f7f7f7';
-  }
+  background-color: ${({ items }) => {
+    items.filter((item, index) => (index % 2 === 0 ? '#fff' : '#f7f7f7'));
+  }};
 `;

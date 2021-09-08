@@ -23,7 +23,7 @@ export const Status = styled.span`
   width: 20px;
   height: 20px;
   background-color: ${props => {
-    return props.isOnline ? '#00FF00' : '#FF0000 ';
+    return props.isOnline ? '#32CD32' : '#D22B2B';
   }};
   border-radius: 50%;
 `;
