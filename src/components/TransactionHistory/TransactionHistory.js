@@ -18,9 +18,9 @@ const TransactionHistory = ({ items }) => {
       </Thread>
 
       <tbody>
-        {items.map(({ id, type, amount, currency }) => {
+        {items.map(({ id, type, amount, currency }, index) => {
           return (
-            <TableItem items={items} key={id}>
+            <TableItem elIndex={index} key={id}>
               <TableCell>{type}</TableCell>
               <TableCell>{amount}</TableCell>
               <TableCell>{currency}</TableCell>

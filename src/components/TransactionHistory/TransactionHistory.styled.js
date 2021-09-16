@@ -4,6 +4,7 @@ export const Table = styled.table`
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
 
   text-align: center;
   width: 80%;
@@ -22,7 +23,7 @@ export const TableCell = styled.th`
 `;
 
 export const TableItem = styled.tr`
-  background-color: ${({ items }) => {
-    items.filter((item, index) => (index % 2 === 0 ? '#fff' : '#f7f7f7'));
+  background-color: ${({ elIndex }) => {
+    return elIndex % 2 === 0 ? '#fff' : '#B6D0E2';
   }};
 `;
